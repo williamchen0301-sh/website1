@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name | Projects</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><span class="brand-dot"></span><span>Your Name</span></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card pad">
+      <div class="kicker">Projects</div>
+      <h1>Work I’m building this semester</h1>
+      <p>Start with placeholders—replace with real projects as you go.</p>
+    </section>
+
+    <section style="margin-top:14px" class="grid">
+      <article class="card col-6">
+        <div class="project">
+          <div class="tag">Placeholder • Data</div>
+          <h2 style="margin:0">Project #1</h2>
+          <p>1–2 lines: problem → what you built → result/learning.</p>
+          <div class="actions">
+            <a class="btn" href="#">Demo (soon)</a>
+            <a class="btn" href="#">Code (soon)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-6">
+        <div class="project">
+          <div class="tag">Placeholder • Research</div>
+          <h2 style="margin:0">Project #2</h2>
+          <p>1–2 lines: method (survey/interviews/analysis) → insight.</p>
+          <div class="actions">
+            <a class="btn" href="#">Write-up (soon)</a>
+            <a class="btn" href="#">Slides (soon)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-6">
+        <div class="project">
+          <div class="tag">Placeholder • Web</div>
+          <h2 style="margin:0">Project #3</h2>
+          <p>Short description of what users can do.</p>
+          <div class="actions">
+            <a class="btn" href="#">Live (soon)</a>
+            <a class="btn" href="#">Repo (soon)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-6">
+        <div class="project">
+          <div class="tag">Placeholder • Impact</div>
+          <h2 style="margin:0">Project #4</h2>
+          <p>Leadership/impact summary (numbers help).</p>
+          <div class="actions">
+            <a class="btn" href="#">Summary (soon)</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Your Name</span>
+      <span><a href="contact.html">Contact</a></span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

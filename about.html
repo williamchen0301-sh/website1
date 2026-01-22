@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name | About</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><span class="brand-dot"></span><span>Your Name</span></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card pad">
+      <div class="kicker">About</div>
+
+      <div class="row" style="margin-top:10px">
+        <img class="avatar" src="assets/images/profile.jpg" alt="Your portrait" onerror="this.style.display='none'">
+        <div class="meta">
+          <b>Bio</b>
+          <span>Write a 2–4 sentence bio here (background + focus + what you’re building).</span>
+          <span><b>Interests:</b> ML, health tech, user research, percussion, etc.</span>
+          <span><b>Skills:</b> Python, data analysis, writing, presentation, etc.</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:14px" class="grid">
+      <div class="card pad col-6">
+        <h2>Interests</h2>
+        <p>List your interests in 4–8 short items.</p>
+      </div>
+      <div class="card pad col-6">
+        <h2>Skills</h2>
+        <p>List concrete tools + methods (e.g., pandas, numpy, surveys, etc.).</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Your Name</span>
+      <span><a href="contact.html">Get in touch</a></span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><span class="brand-dot"></span><span>Your Name</span></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card pad">
+      <div class="kicker">Portfolio</div>
+      <h1>Clean, focused work—one page at a time.</h1>
+      <p>
+        Welcome to my portfolio. I’m building projects throughout the semester in data, research, and product.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="projects.html">View Projects</a>
+        <a class="btn" href="about.html">About Me</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </section>
+
+    <section style="margin-top:14px" class="grid">
+      <div class="card pad col-6">
+        <h2>What I’m doing this semester</h2>
+        <p>Add 2–3 bullet points (courses, focus areas, goals).</p>
+      </div>
+      <div class="card pad col-6">
+        <h2>Latest update</h2>
+        <p>Write a short “recent work” note. Update it weekly.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Your Name</span>
+      <span>Hosted on GitHub Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
