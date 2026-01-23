@@ -1,88 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name | Projects</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wei Lin Chen | Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand"><span class="brand-dot"></span><span>Your Name</span></div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+        <a href="index.html" class="logo">Wei Lin Chen</a>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-  <main class="wrap">
-    <section class="card pad">
-      <div class="kicker">Projects</div>
-      <h1>Work I’m building this semester</h1>
-      <p>Start with placeholders—replace with real projects as you go.</p>
-    </section>
+    <main>
+        <h1>Projects</h1>
+        <p>A selection of my work in data science and healthcare research.</p>
 
-    <section style="margin-top:14px" class="grid">
-      <article class="card col-6">
-        <div class="project">
-          <div class="tag">Placeholder • Data</div>
-          <h2 style="margin:0">Project #1</h2>
-          <p>1–2 lines: problem → what you built → result/learning.</p>
-          <div class="actions">
-            <a class="btn" href="#">Demo (soon)</a>
-            <a class="btn" href="#">Code (soon)</a>
-          </div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>AI for Diagnosing Lung Diseases</h3>
+                <p><strong>Role:</strong> Team Leader</p>
+                <p>Led a team to develop an AI diagnostic model using fast-ensemble techniques. [cite_start]Deployed to 300+ users for at-home respiratory monitoring[cite: 32, 34].</p>
+                <br>
+                <a href="#" class="btn">View Details</a>
+            </article>
+
+            <article class="card">
+                <h3>Sudden Cardiac Death Prevention</h3>
+                <p><strong>Role:</strong> Project Lead</p>
+                [cite_start]<p>Conducted research on cardiac arrest awareness among 100+ older adults and organized emergency training courses[cite: 37, 39, 40].</p>
+                <br>
+                <a href="#" class="btn">View Details</a>
+            </article>
+
+            <article class="card">
+                <h3>Upcoming Data Analysis Project</h3>
+                <p><strong>Status:</strong> In Progress</p>
+                <p>A placeholder for future work involving statistical modeling using R and Python.</p>
+                <br>
+                <button class="btn" disabled style="background-color: grey;">Coming Soon</button>
+            </article>
         </div>
-      </article>
-
-      <article class="card col-6">
-        <div class="project">
-          <div class="tag">Placeholder • Research</div>
-          <h2 style="margin:0">Project #2</h2>
-          <p>1–2 lines: method (survey/interviews/analysis) → insight.</p>
-          <div class="actions">
-            <a class="btn" href="#">Write-up (soon)</a>
-            <a class="btn" href="#">Slides (soon)</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card col-6">
-        <div class="project">
-          <div class="tag">Placeholder • Web</div>
-          <h2 style="margin:0">Project #3</h2>
-          <p>Short description of what users can do.</p>
-          <div class="actions">
-            <a class="btn" href="#">Live (soon)</a>
-            <a class="btn" href="#">Repo (soon)</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card col-6">
-        <div class="project">
-          <div class="tag">Placeholder • Impact</div>
-          <h2 style="margin:0">Project #4</h2>
-          <p>Leadership/impact summary (numbers help).</p>
-          <div class="actions">
-            <a class="btn" href="#">Summary (soon)</a>
-          </div>
-        </div>
-      </article>
-    </section>
+    </main>
 
     <footer>
-      <span>© <span id="year"></span> Your Name</span>
-      <span><a href="contact.html">Contact</a></span>
+        <p>&copy; 2026 Wei Lin Chen.</p>
     </footer>
-  </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,58 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name | About</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wei Lin Chen | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand"><span class="brand-dot"></span><span>Your Name</span></div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+        <a href="index.html" class="logo">Wei Lin Chen</a>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-  <main class="wrap">
-    <section class="card pad">
-      <div class="kicker">About</div>
+    <main>
+        <h1>About Me</h1>
+        
+        <section>
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Carnegie Mellon University</h3>
+                [cite_start]<p><strong>B.S. in Statistics & Machine Learning</strong> (Anticipated 2029) [cite: 5, 6]</p>
+                [cite_start]<p>Relevant Coursework: Fundamentals of Programming, Multivariate Analysis[cite: 6].</p>
+            </div>
+        </section>
 
-      <div class="row" style="margin-top:10px">
-        <img class="avatar" src="assets/images/profile.jpg" alt="Your portrait" onerror="this.style.display='none'">
-        <div class="meta">
-          <b>Bio</b>
-          <span>Write a 2–4 sentence bio here (background + focus + what you’re building).</span>
-          <span><b>Interests:</b> ML, health tech, user research, percussion, etc.</span>
-          <span><b>Skills:</b> Python, data analysis, writing, presentation, etc.</span>
-        </div>
-      </div>
-    </section>
+        <br>
 
-    <section style="margin-top:14px" class="grid">
-      <div class="card pad col-6">
-        <h2>Interests</h2>
-        <p>List your interests in 4–8 short items.</p>
-      </div>
-      <div class="card pad col-6">
-        <h2>Skills</h2>
-        <p>List concrete tools + methods (e.g., pandas, numpy, surveys, etc.).</p>
-      </div>
-    </section>
+        <section>
+            <h2>Experience</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>METIS Therapeutics</h3>
+                    <p><em>Summer Intern | Hangzhou, China</em></p>
+                    [cite_start]<p>Utilized Python (pandas, numpy) to process clinical trial datasets and support AI-driven pharmaceutical research[cite: 16].</p>
+                </div>
+                <div class="card">
+                    <h3>China Cardiovascular Association</h3>
+                    <p><em>Intern | Shanghai, China</em></p>
+                    [cite_start]<p>Researched and wrote 30+ articles on cardiopulmonary diseases and developed content strategies[cite: 27, 28].</p>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Skills</h2>
+            <ul style="list-style-position: inside; line-height: 2;">
+                [cite_start]<li><strong>Tech:</strong> Python (PCEPT™ Certified), Data Structures [cite: 47]</li>
+                [cite_start]<li><strong>Languages:</strong> Mandarin (Native), English (Fluent) [cite: 46]</li>
+                [cite_start]<li><strong>Arts:</strong> Percussion (15 years), Street Dance (Popping, Locking) [cite: 47]</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-      <span>© <span id="year"></span> Your Name</span>
-      <span><a href="contact.html">Get in touch</a></span>
+        <p>&copy; 2026 Wei Lin Chen.</p>
     </footer>
-  </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>

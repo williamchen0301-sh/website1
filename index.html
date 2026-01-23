@@ -1,58 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name | Home</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wei Lin Chen | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand"><span class="brand-dot"></span><span>Your Name</span></div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+        <a href="index.html" class="logo">Wei Lin Chen</a>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-  <main class="wrap">
-    <section class="card pad">
-      <div class="kicker">Portfolio</div>
-      <h1>Clean, focused work—one page at a time.</h1>
-      <p>
-        Welcome to my portfolio. I’m building projects throughout the semester in data, research, and product.
-      </p>
+    <main>
 
-      <div class="actions">
-        <a class="btn primary" href="projects.html">View Projects</a>
-        <a class="btn" href="about.html">About Me</a>
-        <a class="btn" href="contact.html">Contact</a>
-      </div>
-    </section>
-
-    <section style="margin-top:14px" class="grid">
-      <div class="card pad col-6">
-        <h2>What I’m doing this semester</h2>
-        <p>Add 2–3 bullet points (courses, focus areas, goals).</p>
-      </div>
-      <div class="card pad col-6">
-        <h2>Latest update</h2>
-        <p>Write a short “recent work” note. Update it weekly.</p>
-      </div>
-    </section>
+        <section class="hero">
+            <div class="hero-text">
+                <h1 id="greeting">Hello,</h1>
+                <h2>I'm <span class="highlight">Wei Lin Chen</span>.</h2>
+                <p>A Statistics & Machine Learning student at Carnegie Mellon University with a passion for healthcare data science and Python programming.</p>
+                <br>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn">View My Work</a>
+                    <a href="contact.html" class="btn">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Wei Lin Chen">
+            </div>
+        </section>
+        
+    </main>
 
     <footer>
-      <span>© <span id="year"></span> Your Name</span>
-      <span>Hosted on GitHub Pages</span>
+        <p>&copy; 2026 Wei Lin Chen. Built with HTML/CSS/JS/AI.</p>
     </footer>
-  </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
